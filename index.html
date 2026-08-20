@@ -1,334 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website created as a Phase 1 web development assignment.">
-    <meta name="author" content="Juan">
-    <meta name="keywords" content="personal website, HTML, CSS, student, portfolio assignment">
-
-    <title>Juan | Personal Website</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Personal website created for a Phase 1 and Phase 2 web development assignment.">
+<meta name="author" content="Juan">
+<meta name="keywords" content="personal website, HTML, CSS, JavaScript, jQuery, web development">
+<title>Juan | Personal Website</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
-
 <body>
-
-<header>
-    <div class="container">
-        <h1>Juan</h1>
-        <p>Student | AI & Data Science | Media & Editing</p>
-    </div>
-</header>
-
-<nav>
-    <div class="container nav-container">
-        <a href="#home">Home</a>
-        <a href="#profile">Profile</a>
-        <a href="#cv">CV</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#gallery">Activities</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
-
+<header><div class="container"><h1>Juan</h1><p>Student | AI & Data Science | Media & Editing</p><p id="greeting" class="greeting">Welcome!</p></div></header>
+<nav><div class="container nav-container">
+<a href="#home">Home</a><a href="#profile">Profile</a><a href="#cv">CV</a><a href="#education">Education</a><a href="#projects">Projects</a><a href="#gallery">Activities</a><a href="#articles">Articles</a><a href="#weather">Weather</a><a href="#contact">Contact</a>
+</div></nav>
 <main>
+<section id="home" class="hero"><div class="container"><h2>Welcome to My Website</h2><p>This website was created as part of a web development assignment using HTML5, CSS3 and JavaScript.</p><a class="button" href="#profile">Explore Website</a></div></section>
 
-    <!-- HOME -->
-    <section id="home" class="hero">
-        <div class="container">
-            <h2>Welcome to My Website</h2>
-            <p>
-                This website was created as part of a Phase 1 web development
-                assignment using HTML5 and CSS3.
-            </p>
-        </div>
-    </section>
+<section id="profile"><div class="container"><h2>Profile</h2><div class="profile-grid">
+<div class="profile-photo"><img src="images/profile-placeholder.jpg" alt="Profile photo placeholder"></div>
+<div><h3>About Me</h3><p>I am a B.Tech student specializing in Artificial Intelligence and Data Science. I am interested in technology, programming, video editing, photography and media.</p><p>I enjoy learning new technical skills and working on creative and academic projects.</p></div>
+<div class="info-box"><h3>Quick Information</h3><ul><li><strong>Course:</strong> B.Tech AI & Data Science</li><li><strong>Graduation:</strong> 2028</li><li><strong>Interests:</strong> AI, Data Science, Media</li><li><strong>Hobbies:</strong> Music, Videography, Editing</li></ul></div>
+</div></div></section>
 
-    <!-- PROFILE -->
-    <section id="profile">
-        <div class="container">
-            <h2>Profile</h2>
+<section id="cv" class="light-section"><div class="container"><h2>CV</h2>
+<article class="card"><h3>Career Objective</h3><p>To develop my technical and creative skills through academic projects and practical experiences while continuously learning new technologies.</p></article>
+<article class="card"><h3>Skills</h3><ul class="skills-list"><li>HTML & CSS</li><li>JavaScript</li><li>Python</li><li>Data Science</li><li>Adobe Premiere Pro</li><li>Adobe After Effects</li><li>Adobe Photoshop</li><li>Adobe Lightroom</li></ul></article>
+<article class="card"><h3>Experience & Activities</h3><ul><li>Media Lead at the college media team.</li><li>Event media coverage and coordination.</li><li>Video editing and photography activities.</li><li>Experience working with creative media software.</li></ul></article>
+</div></section>
 
-            <div class="profile-grid">
-                <div>
-                    <h3>About Me</h3>
-                    <p>
-                        I am a B.Tech student specializing in Artificial Intelligence
-                        and Data Science. I am interested in technology, programming,
-                        video editing, photography and media.
-                    </p>
-                    <p>
-                        I enjoy learning new technical skills and working on creative
-                        and academic projects.
-                    </p>
-                </div>
+<section id="education"><div class="container"><h2>Education & Technical Expertise</h2>
+<div class="table-wrapper"><table><tr><th>Qualification</th><th>Institution</th><th>Year</th><th>Area</th></tr><tr><td>B.Tech</td><td>Pragyagiri School of Engineering and Technology</td><td>2024 - 2028</td><td>Artificial Intelligence & Data Science</td></tr><tr><td>Higher Secondary</td><td>School Education</td><td>Completed</td><td>Science</td></tr></table></div>
+<div class="grid"><article class="card"><h3>Programming</h3><ul><li>Python</li><li>C</li><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></article><article class="card"><h3>Data & AI</h3><ul><li>NumPy</li><li>Pandas</li><li>Matplotlib</li><li>Data Mining</li></ul></article><article class="card"><h3>Creative Tools</h3><ul><li>Premiere Pro</li><li>After Effects</li><li>Photoshop</li><li>Lightroom</li></ul></article></div>
+</div></section>
 
-                <div class="info-box">
-                    <h3>Quick Information</h3>
-                    <ul>
-                        <li><strong>Course:</strong> B.Tech AI & Data Science</li>
-                        <li><strong>Graduation:</strong> 2028</li>
-                        <li><strong>Interests:</strong> AI, Data Science, Media</li>
-                        <li><strong>Hobbies:</strong> Music, Videography, Editing</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="projects" class="light-section"><div class="container"><h2>Projects</h2><div class="grid"><article class="card project-card"><h3>Data Analysis Project</h3><p>A Python-based project involving data cleaning, analysis and visualization using Pandas, NumPy and Matplotlib.</p></article><article class="card project-card"><h3>Programming Projects</h3><p>Academic programs developed using C and Python, including data structures, algorithms and problem-solving programs.</p></article><article class="card project-card"><h3>Media Projects</h3><p>Video editing and event media projects involving editing, photography and creative content production.</p></article></div></div></section>
 
-    <!-- CV -->
-    <section id="cv" class="light-section">
-        <div class="container">
-            <h2>CV</h2>
+<section id="gallery"><div class="container"><h2>Activities & Interactive Gallery</h2><p>Click a thumbnail to update the main display with the selected activity's title, description and image.</p>
+<div class="gallery-main"><img id="main-gallery-image" src="images/activity1.svg" alt="Selected activity"><div><h3 id="gallery-title">College Events</h3><p id="gallery-description">Media coverage and participation in college events.</p></div></div>
+<div class="gallery-thumbnails"><button class="thumbnail" type="button" data-title="College Events" data-description="Media coverage and participation in college events." data-image="images/activity1.svg"><img src="images/activity1.svg" alt="College Events"><span>College Events</span></button><button class="thumbnail" type="button" data-title="Media Activities" data-description="Photography and media activities carried out as part of college events." data-image="images/activity2.svg"><img src="images/activity2.svg" alt="Media Activities"><span>Media Activities</span></button><button class="thumbnail" type="button" data-title="Video Editing" data-description="Creative video editing projects using professional editing software." data-image="images/activity3.svg"><img src="images/activity3.svg" alt="Video Editing"><span>Video Editing</span></button></div>
+<h3 class="subheading">Embedded Content</h3><div class="iframe-container"><iframe src="https://www.openstreetmap.org/export/embed.html?bbox=76.25%2C9.90%2C76.35%2C10.05&layer=mapnik" title="Map showing Kochi area" loading="lazy"></iframe></div>
+</div></section>
 
-            <article class="card">
-                <h3>Career Objective</h3>
-                <p>
-                    To develop my technical and creative skills through academic
-                    projects and practical experiences while continuously learning
-                    new technologies.
-                </p>
-            </article>
+<section id="articles" class="light-section"><div class="container"><h2>My Articles</h2><p>Recent technology articles retrieved from the DEV Community public API. If no personal articles are published, this acts as a technology-feed demonstration.</p><p id="articles-status" class="status">Loading articles...</p><div id="articles-list" class="articles-list"></div></div></section>
 
-            <article class="card">
-                <h3>Skills</h3>
-                <ul class="skills-list">
-                    <li>HTML & CSS</li>
-                    <li>Python</li>
-                    <li>Data Science</li>
-                    <li>Adobe Premiere Pro</li>
-                    <li>Adobe After Effects</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Lightroom</li>
-                </ul>
-            </article>
+<section id="weather"><div class="container"><h2>Live Weather</h2><p>Enter a city to retrieve its current weather using the OpenWeatherMap Current Weather API.</p><div class="weather-search"><input type="text" id="city-input" placeholder="Enter city name" aria-label="City name"><button type="button" id="weather-button">Get Weather</button></div><p id="weather-status" class="status"></p><div id="weather-result" class="weather-result"><h3 id="weather-city">Weather information</h3><div class="weather-details"><img id="weather-icon" src="" alt="Weather icon"><div><p id="weather-temperature"></p><p id="weather-description"></p></div></div></div><p class="api-note">Educational note: use only a restricted/demo OpenWeatherMap key for this client-side exercise. Production secrets require server-side protection.</p></div></section>
 
-            <article class="card">
-                <h3>Experience & Activities</h3>
-                <ul>
-                    <li>Media Lead at the college media team.</li>
-                    <li>Event media coverage and coordination.</li>
-                    <li>Video editing and photography activities.</li>
-                    <li>Experience working with creative media software.</li>
-                </ul>
-            </article>
-        </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education">
-        <div class="container">
-            <h2>Education & Technical Expertise</h2>
-
-            <div class="table-wrapper">
-                <table>
-                    <tr>
-                        <th>Qualification</th>
-                        <th>Institution</th>
-                        <th>Year</th>
-                        <th>Area</th>
-                    </tr>
-                    <tr>
-                        <td>B.Tech</td>
-                        <td>Rajagiri School of Engineering and Technology</td>
-                        <td>2024 - 2028</td>
-                        <td>Artificial Intelligence & Data Science</td>
-                    </tr>
-                    <tr>
-                        <td>Higher Secondary</td>
-                        <td>School Education</td>
-                        <td>Completed</td>
-                        <td>Science</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="grid">
-                <article class="card">
-                    <h3>Programming</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>C</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                    </ul>
-                </article>
-
-                <article class="card">
-                    <h3>Data & AI</h3>
-                    <ul>
-                        <li>NumPy</li>
-                        <li>Pandas</li>
-                        <li>Matplotlib</li>
-                        <li>Data Mining</li>
-                    </ul>
-                </article>
-
-                <article class="card">
-                    <h3>Creative Tools</h3>
-                    <ul>
-                        <li>Premiere Pro</li>
-                        <li>After Effects</li>
-                        <li>Photoshop</li>
-                        <li>Lightroom</li>
-                    </ul>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="light-section">
-        <div class="container">
-            <h2>Projects</h2>
-
-            <div class="grid">
-                <article class="card project-card">
-                    <h3>Data Analysis Project</h3>
-                    <p>
-                        A Python-based project involving data cleaning, analysis and
-                        visualization using Pandas, NumPy and Matplotlib.
-                    </p>
-                </article>
-
-                <article class="card project-card">
-                    <h3>Programming Projects</h3>
-                    <p>
-                        Academic programs developed using C and Python, including
-                        data structures, algorithms and problem-solving programs.
-                    </p>
-                </article>
-
-                <article class="card project-card">
-                    <h3>Media Projects</h3>
-                    <p>
-                        Video editing and event media projects involving editing,
-                        photography and creative content production.
-                    </p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- ACTIVITIES / GALLERY -->
-    <section id="gallery">
-        <div class="container">
-            <h2>Activities & Gallery</h2>
-
-            <p>
-                Some of the activities I have been involved in include college
-                events, media coverage, photography and video editing.
-            </p>
-
-            <div class="gallery">
-                <div class="gallery-item">
-                    <img src="images/image.jpg" alt="College event">
-                    <p>College Events</p>
-                </div>
-
-                <div class="gallery-item">
-                    <div class="placeholder">Media Photo</div>
-                    <p>Media Activities</p>
-                </div>
-
-                <div class="gallery-item">
-                    <div class="placeholder">Editing Photo</div>
-                    <p>Video Editing</p>
-                </div>
-            </div>
-
-            <h3>Embedded Content</h3>
-            <p>Example of an HTML5 iframe embedding a public map.</p>
-
-            <div class="iframe-container">
-                <iframe
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=76.25%2C9.90%2C76.35%2C10.05&layer=mapnik"
-                    title="Map showing Kochi area"
-                    loading="lazy">
-                </iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="light-section">
-        <div class="container">
-            <h2>Contact Me</h2>
-
-            <form>
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                </div>
-
-                <div class="form-group">
-                    <label>Preferred Contact Method:</label>
-
-                    <div class="inline-options">
-                        <label>
-                            <input type="radio" name="contact_method" value="email">
-                            Email
-                        </label>
-
-                        <label>
-                            <input type="radio" name="contact_method" value="phone">
-                            Phone
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label>Reason for Contact:</label>
-
-                    <div class="inline-options">
-                        <label>
-                            <input type="checkbox" name="reason" value="project">
-                            Project
-                        </label>
-
-                        <label>
-                            <input type="checkbox" name="reason" value="work">
-                            Work
-                        </label>
-
-                        <label>
-                            <input type="checkbox" name="reason" value="other">
-                            Other
-                        </label>
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="6"
-                        placeholder="Enter your message"></textarea>
-                </div>
-
-                <button type="submit">Submit</button>
-            </form>
-
-            <div class="contact-links">
-                <p>
-                    Instagram / Portfolio:
-                    <a href="https://www.instagram.com/" target="_blank">Visit Instagram</a>
-                </p>
-            </div>
-        </div>
-    </section>
-
+<section id="contact" class="light-section"><div class="container"><h2>Contact Me</h2><form id="contact-form" novalidate><div class="form-group"><label for="name">Name:</label><input type="text" id="name" name="name" placeholder="Enter your name"><small id="name-error" class="error"></small></div><div class="form-group"><label for="email">Email:</label><input type="email" id="email" name="email" placeholder="Enter your email"><small id="email-error" class="error"></small></div><div class="form-group"><label>Preferred Contact Method:</label><div class="inline-options"><label><input type="radio" name="contact_method" value="email"> Email</label><label><input type="radio" name="contact_method" value="phone"> Phone</label></div></div><div class="form-group"><label>Reason for Contact:</label><div class="inline-options"><label><input type="checkbox" name="reason" value="project"> Project</label><label><input type="checkbox" name="reason" value="work"> Work</label><label><input type="checkbox" name="reason" value="other"> Other</label></div></div><div class="form-group"><label for="message">Message:</label><textarea id="message" name="message" rows="6" placeholder="Enter your message"></textarea><small id="message-error" class="error"></small></div><button type="submit">Submit</button><p id="form-result" class="form-result"></p></form><div class="contact-links"><p>Instagram / Portfolio: <a href="https://www.instagram.com/" target="_blank">Visit Instagram</a></p></div></div></section>
 </main>
-
-<footer>
-    <div class="container">
-        <p>&copy; 2026 Juan. Created for a Web Development Phase 1 Assignment.</p>
-    </div>
-</footer>
-
+<footer><div class="container"><p>&copy; 2026 Juan. Created for a Web Development Phase 2 Assignment.</p></div></footer>
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,70 +1,54 @@
-# Personal Website - Phase 1
+# Personal Website - Phase 2
 
-## Project Description
+This is the enhanced Phase 2 version of the Phase 1 personal website. The original profile, CV, education, projects, activities and contact content has been retained.
 
-This is a simple personal website created as part of a Phase 1 Web Development assignment.
-The website demonstrates HTML5 semantic elements, forms, tables, CSS styling, Flexbox/Grid,
-responsive design and embedded content.
+## Phase 2 additions
 
-## Website Sections
+### Dynamic greeting
+JavaScript checks the current hour and displays Good Morning, Good Afternoon or Good Evening. It uses `getElementById()` and `.textContent`.
 
-- Home
-- Profile
-- CV
-- Education & Technical Expertise
-- Projects
-- Activities / Gallery
-- Contact
+### Contact form validation
+The form uses the `submit` event. JavaScript validates Name, Email and Message using `.value`, conditions, functions and DOM updates through `.textContent` and `.style`.
 
-## Files
+### DOM and events
+The code demonstrates `getElementById()`, `querySelector()`, `.innerHTML`, `.textContent`, `.style`, `.value` and `addEventListener()` with submit, click, mouseover, mouseout, change and keydown events.
 
-- `index.html` - Main HTML page
-- `style.css` - External CSS stylesheet
-- `images/` - Folder for website images
+### jQuery gallery
+jQuery is loaded from the CDN. Clicking a gallery thumbnail updates the main image, title and description. It demonstrates `$()`, `.on()`, `.data()`, `.text()`, `.attr()` and `.css()`.
 
-## Technologies Used
+### DEV Community articles
+The page uses `fetch()` with the DEV Community public API endpoint `https://dev.to/api/articles?per_page=5`. Five recent article titles are inserted dynamically as clickable links. Errors are handled with `try/catch`.
 
-- HTML5
-- CSS3
-- CSS Grid
-- Flexbox
-- Media Queries
+### Live weather
+The page uses the OpenWeatherMap Current Weather API. The user enters a city and receives the city name, temperature in Celsius, description and weather icon without reloading the page. Invalid cities, invalid API keys and other API errors are handled gracefully.
 
-## HTML5 Features Demonstrated
+## OpenWeatherMap API key
 
-- Semantic elements: header, nav, main, section, article and footer
-- Headings and paragraphs
-- Links
-- Lists
-- Table with rows, headings and data cells
-- Contact form
-- Text input and email input
-- Radio buttons
-- Checkboxes
-- Textarea
-- Button
-- iframe
+Open `script.js` and replace:
 
-## Responsive Design
+`const OPENWEATHER_API_KEY = "YOUR_OPENWEATHER_API_KEY";`
 
-A CSS media query is included for screens smaller than 768px. The layout changes from
-multi-column grids to a single-column mobile layout.
+with your own restricted/educational OpenWeatherMap API key.
 
-## GitHub Pages Deployment
+Do not put a sensitive production secret in a public GitHub repository. Client-side JavaScript is visible to users, so production secrets require server-side protection. For this educational client-side exercise, use only a restricted/demo key and document the limitation.
 
-1. Create a GitHub repository.
-2. Upload `index.html`, `style.css`, `README.md` and the `images` folder.
-3. Open the repository's **Settings**.
-4. Select **Pages**.
-5. Under **Build and deployment**, select **Deploy from a branch**.
-6. Select the `main` branch and `/ (root)`.
-7. Click **Save**.
-8. GitHub will provide the live website URL.
+## Responsive design
 
-## Evidence to Submit
+Media queries are included for tablet and mobile screen sizes.
 
-- GitHub repository URL
+## Deployment
+
+Upload `index.html`, `style.css`, `script.js`, `README.md` and the `images` folder to GitHub. In **Settings > Pages**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
+
+## Evidence to submit
+
+- Updated GitHub repository URL
 - Live GitHub Pages URL
-- Screenshot of desktop view
-- Screenshot of mobile/responsive view
-- Screenshot showing HTML and CSS files
+- External `script.js`
+- Dynamic greeting
+- Form validation
+- jQuery gallery
+- Five retrieved DEV articles
+- Successful weather lookup
+- Error handling
+- Desktop and mobile screenshots
